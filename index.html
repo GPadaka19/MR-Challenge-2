@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finger Tip Fire</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas, video { position: absolute; top: 0; left: 0; }
+    .fire-emoji {
+      display: none;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" autoplay muted playsinline width="640" height="480"></video>
+  <canvas id="output" width="640" height="480"></canvas>
+  <div id="fire-emoji-0" class="fire-emoji">🔥</div>
+  <div id="fire-emoji-1" class="fire-emoji">🔥</div>
+  <div id="fire-emoji-2" class="fire-emoji">🔥</div>
+  <div id="fire-emoji-3" class="fire-emoji">🔥</div>
+  <div id="fire-emoji-4" class="fire-emoji">🔥</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="apps.js"></script>
+</body>
+</html>
